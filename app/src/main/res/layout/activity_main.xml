@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9719">
+
+    <ImageView
+        android:id="@+id/incomingAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/incomingName"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/incomingAvatar"
+        android:background="@drawable/incoming_name_shape"
+        android:gravity="bottom|center"
+        android:text="Mr.Bean"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/incomingNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/incomingName"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="0123456789"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/transparent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/incomingNumber"
+        android:src="@drawable/call_back" />
+
+    <ImageButton
+        android:background="@android:color/transparent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/incomingNumber"
+        android:src="@drawable/end_call" />
+
+</RelativeLayout>
